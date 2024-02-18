@@ -14,7 +14,7 @@
 <body>
     <header class="mx-40 min-h-screen m-auto">
         <!--navbar  -->
-   <nav>
+   <nav id="navbar">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -45,7 +45,7 @@
           </div>
    </nav>
 <!-- banner section -->
-<section class="mt-6">
+<section id="banner-section" class="mt-6">
     <div class="hero min-h-screen" style="background-image: url(./images/banner.png);">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
@@ -59,7 +59,7 @@
       </div>
 </section>
     <!-- card section -->
-    <section class="mt-16">
+    <section id="card-section" class="mt-16">
         <h2 class="text-center text-3xl font-semibold my-6">Best offers for you</h2>
         <div class="flex justify-between gap-10">
          <div class="">
@@ -97,7 +97,7 @@
     <main class="bg-[#F7F8F8FF] max-w-full">
     
 <!-- bus-info section -->
-<section class="mx-36 m-auto">
+<section id="bus-info" class="mx-36 m-auto">
 <div class="text-center pt-6">
     <h1 class=" text-3xl font-bold">P.H Paribahan</h1>
     <p>I love traveling by train.  We will all travel by train I love traveling by train.<br> We will all travel by train</p>
@@ -174,7 +174,7 @@
 
 </section>
 <!-- ticketing interface -->
-<section class="mx-36 bg-white min-h-screen">
+<section id="ticketing-interface" class="mx-36 bg-white min-h-screen">
     <div class="grid grid-cols-2 gap-4">
         <!-- left -->
         <div class="">
@@ -337,9 +337,9 @@
                     </div>
                 </div>
                 <div>
-                    <label class="input input-bordered flex items-center gap-2">
-                        <input type="text" class="grow" placeholder="Search" />
-                      <button class="btn px-4 text-white bg-[#1DD100FF]">Apply</button>
+                 <label class="input input-bordered flex items-center gap-2">
+                      <input type="text" class="grow" placeholder="Search" />
+                  <button class="btn px-4 text-white bg-[#1DD100FF]">Apply</button>
                       </label>
                   </div>
                   <div class="flex justify-between my-3">
@@ -377,7 +377,7 @@
                     <input type="text" placeholder="Enter your email id" class="input input-bordered w-full max-w-xl" />
                 
                   </label>
-                  <button class="btn btn-wide w-full mt-3 text-white bg-[#1DD100FF]">Next</button>
+                  <button onclick="play()" class="btn btn-wide w-full mt-3 text-white bg-[#1DD100FF]">Next</button>
                   <div class="flex justify-between mt-3">
                      
                     <a class="link link-hover">Terms and Conditions</a>
@@ -390,7 +390,7 @@
     </div>
 </section>
 <!-- hide section -->
-<section class="mx-36 mt-10 min-h-screen bg-[#F7F8F8E6] border-2 border-cyan-50 hidden">
+<section id="success" class="mx-36 mt-10 min-h-screen bg-[#F7F8F8E6] border-2 border-cyan-50 hidden">
 
 <div class="flex justify-center items-center">
     <div class="card bg-base-100 mt-24 shadow-xl">
@@ -413,6 +413,7 @@
     <footer>
 
     </footer>
+    <script src="scripts/alpha-clash.js"></script>
     <script src="scripts/alpha.js"></script>
 </body>
 </html>
