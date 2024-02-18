@@ -18,18 +18,29 @@ for(const btn of allBtn){
        td2.innerText = ticketName2;
        const td3 = document.createElement('td');
        td3.innerText = ticketName3;
-   
+
+       e.target.style.backgroundColor = '#1DD100FF';
 
        tr.appendChild(td);
        tr.appendChild(td2);
        tr.appendChild(td3);
        selectedContainer.appendChild(tr);
 
+       const score = document.getElementById('score').innerText;
+       const convertedScore = parseInt(score);
+        if(convertedScore - parseInt(1) < 36){
+            alert('Your ticket is full');
+            return;
+        }
+
+
+       document.getElementById('score').innerText = convertedScore - parseInt(1);
+
     //    const totalPrice = document.getElementById('total-price').innerText;
     //   const convertedTotalPrice = parseInt(totalPrice);
     //     // const sum = convertedTotalPrice + parseInt(ticketName3);
     //   document.getElementById('total-price').innerText = sum;
-    totalCost('total-price', parseInt(ticketName3));
+    totalCost('total-price', parseInt(ticketName3))
     grandTotal('grand-total', parseInt(ticketName3));
 
     
