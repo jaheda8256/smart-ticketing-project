@@ -28,9 +28,17 @@ for(const btn of allBtn){
 
        const score = document.getElementById('score').innerText;
        const convertedScore = parseInt(score);
+
         if(convertedScore - parseInt(1) < 36){
             alert('Your ticket is full');
             return;
+    
+        // if(convertedScore === 36){
+        //     alert('your ticket is full');
+        //             return;
+        //     }
+
+            
         }
 
 
