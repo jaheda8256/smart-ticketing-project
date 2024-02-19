@@ -32,11 +32,6 @@ for(const btn of allBtn){
         if(convertedScore - parseInt(1) < 36){
             alert('Your ticket is full');
             return;
-    
-        // if(convertedScore === 36){
-        //     alert('your ticket is full');
-        //             return;
-        //     }
 
             
         }
@@ -44,22 +39,41 @@ for(const btn of allBtn){
 
        document.getElementById('score').innerText = convertedScore - parseInt(1);
 
-    //    const totalPrice = document.getElementById('total-price').innerText;
-    //   const convertedTotalPrice = parseInt(totalPrice);
-    //     // const sum = convertedTotalPrice + parseInt(ticketName3);
-    //   document.getElementById('total-price').innerText = sum;
     totalCost('total-price', parseInt(ticketName3))
     grandTotal('grand-total', parseInt(ticketName3));
 
     
     setInnerText('btn-count',count);
-    // setInnerText('total-price',sum);
+   
 
         
     })
 
 }
 
+const applyBtn = document.getElementById('apply-btn');
+applyBtn.addEventListener('click',function(){
+    // get the value input
+    const couponElement = document.getElementById('input-field').value;
+    const couponCode = couponElement.split(" ").join("").toUpperCase();
+    console.log(couponCode);
+    
+
+        if(couponCode === "NEW15"){
+            hideElementById('apply-btn');
+            hideElementById('input-field');
+            hideElementById('label');
+           
+        }
+        else {
+            alert('invalid');
+            return;
+        }
+      
+    })
+   
+   
+   
 
 function totalCost(id,value){
     const totalPrice = document.getElementById(id).innerText;
