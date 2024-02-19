@@ -30,7 +30,7 @@ for(const btn of allBtn){
        const convertedScore = parseInt(score);
 
         if(convertedScore - parseInt(1) < 36){
-            alert('Your ticket is full');
+            alert('Your ticket is full').to;
             return;
 
             
@@ -54,25 +54,32 @@ for(const btn of allBtn){
 const applyBtn = document.getElementById('apply-btn');
 applyBtn.addEventListener('click',function(){
     // get the value input
-    const couponElement = document.getElementById('input-field').value;
-    const couponCode = couponElement.split(" ").join("").toUpperCase();
-    console.log(couponCode);
-    
+    const couponCode = document.getElementById('input-field').value;
+  console.log(couponCode);
 
-        if(couponCode === "NEW15"){
+        if(couponCode === "NEW15") {
+
             hideElementById('apply-btn');
             hideElementById('input-field');
             hideElementById('label');
-           
+            
         }
+        else if(couponCode === "Couple 20"){
+            hideElementById('apply-btn');
+            hideElementById('input-field');
+            hideElementById('label');
+        }
+
         else {
             alert('invalid');
             return;
         }
-      
-    })
+       
+
+    });
    
-   
+
+       
    
 
 function totalCost(id,value){
