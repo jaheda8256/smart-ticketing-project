@@ -1,18 +1,18 @@
-// document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
  
-//     const scrollButton = document.getElementById("scroll-button");
-//     scrollButton.addEventListener("click", function() {
-//         // Calculate the height to scroll
+    const scrollButton = document.getElementById("scroll-button");
+    scrollButton.addEventListener("click", function() {
+        // Calculate the height to scroll
         
-//        const scrollHeight = window.innerHeight;
+       const scrollHeight = window.innerHeight;
 
-//         // Smooth scroll to the calculated height
-//         window.scrollTo({
-//             top: scrollHeight,
-//             behavior: "smooth"
-//         });
-//     });
-// });
+        // Smooth scroll to the calculated height
+        window.scrollTo({
+            top: scrollHeight,
+            behavior: "smooth"
+        });
+    });
+});
 
 function play() {
     hideElementById('ticketing-interface');

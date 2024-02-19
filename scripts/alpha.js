@@ -41,12 +41,7 @@ for(const btn of allBtn){
 // total discount Amount 
 
 
-if(totalCost >= 2200 && couponCode === "NEW15"){
-    const discountElement = document.getElementById('grand-total');
-    const discountAmount = totalCost * 0.85;
-  discountElement.innerText = discountAmount.toFixed(2);
-    
-}
+
 
 document.getElementById('score').innerText = convertedScore - parseInt(1);
 totalCost('total-price', parseInt(ticketPrice))
@@ -57,6 +52,23 @@ setInnerText('btn-count',count);
 
 }
 
+function disableButton() {
+    const scrollButton = document.getElementById("button");
+    scrollButton.disabled = true;
+    
+}
+// disable seat button
+document.addEventListener("DOMContentLoaded", function() {
+   let scrollButtons = document.getElementsByClassName("all-btn");
+
+    // Loop through all buttons and add click event listener
+    for (let i = 0; i < scrollButtons.length; i++) {
+        scrollButtons[i].addEventListener("click", function(event) {
+            // Disable the clicked button
+            event.target.disabled = true;
+        });
+    }
+});
 
 
 const applyBtn = document.getElementById('apply-btn');
@@ -87,10 +99,6 @@ applyBtn.addEventListener('click',function(){
     });
 
    
-   
-
-       
-   
 
 function totalCost(id,value){
     const totalPrice = document.getElementById(id).innerText;
@@ -103,6 +111,11 @@ function grandTotal(id,value){
     const convertedTotalPrice = parseInt(totalPrice);
     const sum = convertedTotalPrice + parseInt(value);
     setInnerText('grand-total',sum);
+
+    // if(totalCost >= 2200 && couponCode === "NEW15"){
+    //     setInnerText('grand-total',sum * 0.85);
+    //     console.log('dd')
+    // }
 }
 
 
