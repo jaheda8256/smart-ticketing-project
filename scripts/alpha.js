@@ -1,5 +1,6 @@
 const allBtn = document.getElementsByClassName("all-btn");
 
+
 let count = 0;
 for(const btn of allBtn){
     btn.addEventListener('click', function(e){
@@ -37,19 +38,16 @@ for(const btn of allBtn){
         }
 
 
-       document.getElementById('score').innerText = convertedScore - parseInt(1);
-
+   document.getElementById('score').innerText = convertedScore - parseInt(1);
     totalCost('total-price', parseInt(ticketName3))
-    grandTotal('grand-total', parseInt(ticketName3));
-
-    
+    grandTotal('grand-total', parseInt(ticketName3));  
     setInnerText('btn-count',count);
-   
-
-        
+     
     })
 
 }
+
+
 
 const applyBtn = document.getElementById('apply-btn');
 applyBtn.addEventListener('click',function(){
@@ -77,6 +75,8 @@ applyBtn.addEventListener('click',function(){
        
 
     });
+
+   
    
 
        

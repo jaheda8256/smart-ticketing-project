@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>P-Ticket</title>
     <link rel="stylesheet" href="styles/styles.css">
     <!-- daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -53,7 +53,7 @@
             <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with<br> 
                <span class="text-[#1DD100FF]">P Paribahan</span></h1>
             <p class="mb-5">I love traveling by train.  We will all travel by train I love traveling by train.  We will all travel by train</p>
-            <button class="btn btn-primary bg-[#1DD100FF] border-none text-black">Buy Tickets</button>
+            <button id="scroll-button" class="btn btn-primary bg-[#1DD100FF] border-none text-black">Buy Tickets</button>
           </div>
         </div>
       </div>
@@ -208,7 +208,7 @@
               </button>
            </div>
            <!-- seat -->
-           <div class="space-y-2">
+           <div onclick="" id="button" class="space-y-2">
             
           <div class="mt-6">
             <div class="flex gap-10 justify-around items-center">
@@ -237,7 +237,7 @@
                 <button type="submit" class="btn all-btn">C4</button>
                </div>
           </div>
-          <div class="space-y-">
+          <div class="space-y-1">
             <div class="flex gap-10 justify-around items-center">
                 <p>D</p>
                 <button type="submit" class="btn all-btn">D1</button>
@@ -246,7 +246,7 @@
                 <button type="submit" class="btn all-btn">D4</button>
                </div>
           </div>
-          <div class="space-y-">
+          <div class="space-y-1">
             <div class="flex gap-10 justify-around items-center">
                 <p>E</p>
                 <button type="submit" class="btn all-btn">E1</button>
@@ -255,7 +255,7 @@
                 <button type="submit" class="btn all-btn">E4</button>
                </div>
           </div>
-          <div class="space-y-">
+          <div class="space-y-1">
             <div class="flex gap-10 justify-around items-center">
                 <p>F</p>
                 <button type="submit" class="btn all-btn">F1</button>
@@ -264,7 +264,7 @@
                 <button type="submit" class="btn all-btn">F4</button>
                </div>
           </div>
-          <div class="space-y-">
+          <div class="space-y-1">
             <div class="flex gap-10 justify-around items-center">
                 <p>G</p>
                 <button type="submit" class="btn all-btn">G1</button>
@@ -273,7 +273,7 @@
                 <button type="submit" class="btn all-btn">G4</button>
                </div>
           </div>
-          <div class="space-y-">
+          <div class="space-y-1">
             <div class="flex gap-10 justify-around items-center">
                 <p>H</p>
                 <button type="submit" class="btn all-btn">H1</button>
@@ -282,7 +282,7 @@
                 <button type="submit" class="btn all-btn">H4</button>
                </div>
           </div>
-          <div class="space-y-">
+          <div class="space-y-1">
             <div class="flex gap-10 justify-around items-center">
                 <p>I</p>
                 <button type="submit" class="btn all-btn">I1</button>
@@ -291,7 +291,7 @@
                 <button type="submit" class="btn all-btn">I4</button>
                </div>
           </div>
-          <div class="space-y-">
+          <div class="space-y-1">
             <div class="flex gap-10 justify-around items-center">
                 <p>J</p>
                 <button type="submit" class="btn all-btn">J1</button>
@@ -412,9 +412,14 @@
 </div>
 </section>
     </main>
-    <footer>
-
-    </footer>
+    
+      <footer id="footer" class="footer footer-center mt-10 p-4 bg-black text-base-content">
+        <aside>
+          <a class="btn text-white btn-ghost text-xl font-extrabold">P-Ticket</a>
+          <p class="text-white font-bold">P-Ticket is a digital platform to make your daily commuting better.</p>
+        </aside>
+      </footer>
+    
     <script src="scripts/alpha-clash.js"></script>
     <script src="scripts/alpha.js"></script>
 </body>
